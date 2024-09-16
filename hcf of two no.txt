@@ -1,0 +1,26 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the no1:");
+        int num1=sc.nextInt();
+        System.out.print("enter the no2:");
+        int num2=sc.nextInt();
+        int n=1;
+        System.out.print("HCF of two number is:");
+        if(num1!=num2){
+            while(n!=0){
+                n=num1%num2;
+                if(n!=0){
+                    num1=num2;
+                    num2=n;
+                }
+            }
+            System.out.print(num2);
+        }
+        else{
+                System.out.print("Wrong");
+            }
+    }
+}
